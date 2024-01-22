@@ -1,3 +1,12 @@
+<script lang="ts">
+    import type { PageData } from './$types';
+    export let data: PageData; 
+    
+   
+    
+
+</script>
+
 <nav>
     <a href="/">Mercury</a>
     <a href="/venus">Venus</a>
@@ -10,5 +19,7 @@
 </nav>
 
 
-<h1>URANUS</h1>
+<h1>{data.name}</h1>
+
+<h1>EARTH</h1>
 <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>

@@ -1,11 +1,14 @@
-<script>
+<script lang="ts">
+    import type { PageData } from './$types';
+    export let data: PageData;
+    
+    
 
-    export let id; 
-    export let name;
+    
 </script>
 
-
 <nav>
+
     <a href="/">Mercury</a>
     <a href="/venus">Venus</a>
     <a href="/earth">Earth</a>
@@ -17,5 +20,12 @@
 </nav>
 
 
-<h1> MERCURY</h1>
+
+<h1>MERCURY</h1>
+{#each data.data as {id, name}} 
+<h1> {name}</h1>
+<h1> {id}</h1>
+{/each}
 <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+
+
