@@ -19,7 +19,9 @@
 </nav>
 
 
-<h1>{data.name}</h1>
+<h1>{data.rotation}</h1>
+<h1>{data.revolution}</h1>
+<h1>{data.overview.content}</h1>
 
 <h1>EARTH</h1>
 <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
