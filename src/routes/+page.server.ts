@@ -15,6 +15,7 @@
 // src/routes/[id].server.js
 
 import type { PageServerLoad } from "./$types";
+import {redirect} from "@sveltejs/kit";
 
 type PlanetItem = {
   id: string;
@@ -33,6 +34,5 @@ export const load: PageServerLoad = async ({ params }) => {
 
   // Access the 'id' property from the fetched data
   //const { id, name } = data.data[0]; // Assuming there is only one item in the 'data' array
-
   return data;
 };
